@@ -215,7 +215,17 @@ function App() {
             </div>
           </div>
 
-          <button className="border p-2 border-blue-500 font-serif  hover:transition-all hover:bg-blue-800 ">
+          <button
+            className="border p-2 border-blue-500 font-serif  hover:transition-all hover:bg-blue-800 "
+            onClick={() => {
+              setContact(true);
+              setSkills(false);
+              setProjects(false);
+              setAboutMe(false);
+              setPortfolio(false);
+              serCertifications(false);
+            }}
+          >
             HIRE ME
           </button>
         </header>
@@ -322,9 +332,9 @@ function App() {
                 : " hidden"
             } `}
           >
-            <p className="text-4xl font-bold">
+            <p className="text-4xl font-bold font-mono">
               HI I'M <br />
-              <span className="  text-pink-600 opacity-80 font-serif font-semibold text-5xl">
+              <span className="  text-yellow-400 opacity-80 font-serif font-semibold text-5xl">
                 MOHAMMED
               </span>{" "}
               <br />
@@ -478,52 +488,55 @@ function App() {
                 : " hidden"
             } `}
           >
-            <div className="flex flex-wrap justify-around gap-5 mb-3">
-              {myProjects.map((project, i) => {
-                return (
-                  <Card
-                    key={i}
-                    className="max-w-sm bg-transparent bg-white bg-opacity-10"
-                  >
-                    <h5 className="text-2xl font-bold tracking-tight text-orange-400 font-serif  dark:text-white">
-                      {project.title}
-                    </h5>
-                    <p className="font-normal text-white text-opacity-85 dark:text-gray-400">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap justify-around gap-2 mt-2">
-                      <a href={project.githubLink}>
-                        {" "}
-                        <Button className="text-black bg-white w-fit">
-                          <p>
-                            {" "}
-                            Github repo{" "}
-                            <i
-                              className="fa fa-external-link font-semibold text-blue-600"
-                              aria-hidden="true"
-                            ></i>
-                          </p>
-                        </Button>
-                      </a>
+            <div className="flex flex-wrap h-80 overflow-y-scroll justify-around bg-transparent m-1 ">
+              <div className="flex flex-wrap justify-around gap-5 p-3">
+                {myProjects.map((project, i) => {
+                  return (
+                    <Card
+                      key={i}
+                      className="max-w-sm bg-transparent bg-white bg-opacity-10"
+                    >
+                      <h5 className="text-2xl font-bold tracking-tight text-orange-400 font-serif  dark:text-white">
+                        {project.title}
+                      </h5>
+                      <p className="font-normal text-white text-opacity-85 dark:text-gray-400">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap justify-around gap-2 mt-2">
+                        <a href={project.githubLink}>
+                          {" "}
+                          <Button className="text-black bg-white w-fit">
+                            <p>
+                              {" "}
+                              Github repo{" "}
+                              <i
+                                className="fa fa-external-link font-semibold text-blue-600"
+                                aria-hidden="true"
+                              ></i>
+                            </p>
+                          </Button>
+                        </a>
 
-                      <a href={project.webpageLink}>
-                        {" "}
-                        <Button className="text-black bg-white w-fit">
-                          <p>
-                            {" "}
-                            Live Demo{" "}
-                            <i
-                              className="fa fa-external-link font-semibold text-blue-600"
-                              aria-hidden="true"
-                            ></i>
-                          </p>
-                        </Button>
-                      </a>
-                    </div>
-                  </Card>
-                );
-              })}
+                        <a href={project.webpageLink}>
+                          {" "}
+                          <Button className="text-black bg-white w-fit">
+                            <p>
+                              {" "}
+                              Live Demo{" "}
+                              <i
+                                className="fa fa-external-link font-semibold text-blue-600"
+                                aria-hidden="true"
+                              ></i>
+                            </p>
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  );
+                })}
+              </div>
             </div>
+            <i className="fa fa-angle-down" aria-hidden="true"></i>
           </div>
           {/* ===================================|| CERTIFICATIONS BUTTON CONTENT SECTION ||================================= */}
           <div
@@ -534,7 +547,7 @@ function App() {
             } `}
           >
             <div className="flex flex-wrap h-80 overflow-y-scroll justify-around bg-transparent m-1 ">
-              <div className="flex flex-wrap justify-between p-3 gap-5">
+              <div className="flex flex-wrap justify-center p-3 gap-5">
                 {myCertifications.map((certification, index) => (
                   <Card
                     key={index}
@@ -547,6 +560,10 @@ function App() {
                 ))}
               </div>
             </div>
+            <i
+              className="fa fa-angle-down transition-all bounce"
+              aria-hidden="true"
+            ></i>
           </div>
           {/* ===================================|| CONTACT BUTTON CONTENT SECTION ||================================= */}
           <div
