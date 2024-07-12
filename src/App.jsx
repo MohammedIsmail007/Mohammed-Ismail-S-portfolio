@@ -4,6 +4,7 @@ import Typewriter from "./Typewriter";
 import TypewriterPortfolio from "./TypewriterPortfolio";
 import CustomAlert from "./CustomALert";
 import { Button, Card } from "flowbite-react";
+import Footer from "./Footer";
 
 // images import section
 import img1 from "./assets/certificates/figma.png";
@@ -18,6 +19,7 @@ import img9 from "./assets/certificates/react.png";
 import img10 from "./assets/certificates/srmclvl1.png";
 import img11 from "./assets/certificates/srmclvl2.png";
 import img12 from "./assets/certificates/srmclvl3.png";
+import pdfdownload from "./assets/resume.pdf";
 function App() {
   const [portfolio, setPortfolio] = useState(true);
   const [aboutMe, setAboutMe] = useState(false);
@@ -215,19 +217,15 @@ function App() {
             </div>
           </div>
 
-          <button
-            className="border p-2 border-blue-500 font-serif  hover:transition-all hover:bg-blue-800 "
-            onClick={() => {
-              setContact(true);
-              setSkills(false);
-              setProjects(false);
-              setAboutMe(false);
-              setPortfolio(false);
-              serCertifications(false);
-            }}
+          <a
+            href={pdfdownload}
+            target="_blank"
+            download={"Mohammed Ismail S Resume"}
           >
-            HIRE ME
-          </button>
+            <button className="border p-2 border-blue-500 font-serif  hover:transition-all hover:bg-blue-800 ">
+              RESUME <i class="fa fa-download" aria-hidden="true"></i>
+            </button>
+          </a>
         </header>
         {/* ===================================|| CUSTOM ALERT ||================================= */}
         {showAlert && (
@@ -621,8 +619,8 @@ function App() {
               </p>
             </div>
           </div>
+          <Footer />
         </div>
-        <div className="m-14"></div>
       </div>
     </>
   );
