@@ -261,6 +261,7 @@ function App() {
                 setContact(false);
                 setSkills(false);
                 setCertifications(false);
+                setProjects(false);
               }}
               className="hover:bg-blue-500 hover:backdrop:blur-md hover:transition-all text-white pt-1 pb-1 pr-2 pl-2 w-fit  rounded-2xl m-2 backdrop:blur-sm  hover:text-lime-300  font-serif font-bold"
             >
@@ -616,10 +617,47 @@ function App() {
                     ></i>
                   </a>
                 </span>
+                <br />
               </p>
+              <br />
+              <hr />
+              <hr />
+              <span className=" font-serif font-bold text-yellow-400">
+                {" "}
+                CONNECT ME ON <br />{" "}
+                <a href="https://github.com/MohammedIsmail007">
+                  <i
+                    class="fab fa-github fa-xl text-white"
+                    aria-hidden="true"
+                  ></i>
+                </a>{" "}
+                <a href="http://http://www.linkedin.com/in/mohammedismail007">
+                  {" "}
+                  <i
+                    class="fab fa-linkedin fa-xl text-white"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                {"  "}
+                <a href="https://www.instagram.com/mohammed_dev_vibe/">
+                  {" "}
+                  <i
+                    class="fab fa-instagram fa-xl text-white"
+                    aria-hidden="true"
+                  ></i>
+                </a>{" "}
+              </span>
             </div>
           </div>
-          <Footer />
+          <div
+            className={`${
+              !contact
+                ? "flex flex-wrap h-fit  text-white justify-center mt-4 p-2 items-center   bg-transparent  rounded-lg shadow-2xl"
+                : " hidden"
+            } `}
+          >
+            <Footer />
+          </div>
         </div>
       </div>
     </>

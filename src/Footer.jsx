@@ -26,13 +26,6 @@ const Footer = () => {
           >
             <i class="fab fa-instagram" aria-hidden="true"></i>
           </a>
-          <a
-            href="https://myportfolioismail.infinityfreeapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
         </p>
       </div>
     </div>
