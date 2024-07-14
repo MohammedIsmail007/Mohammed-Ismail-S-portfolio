@@ -20,6 +20,7 @@ import img10 from "./assets/certificates/srmclvl1.png";
 import img11 from "./assets/certificates/srmclvl2.png";
 import img12 from "./assets/certificates/srmclvl3.png";
 import pdfdownload from "./assets/resume.pdf";
+import img13 from "./assets/certificates/postmanapi.png";
 function App() {
   const [portfolio, setPortfolio] = useState(true);
   const [aboutMe, setAboutMe] = useState(false);
@@ -37,6 +38,7 @@ function App() {
     { name: "FIGMA UI/UX TOOL", level: "60%" },
     { name: "EXCEL, POWER POINT, WORD  ", level: "80%" },
     { name: "GIT & GITHUB ", level: "60%" },
+    { name: "POSTMAN API FUNDAMENTALS ", level: "85%" },
   ];
 
   const myCertifications = [
@@ -99,6 +101,12 @@ function App() {
       id: 12,
       title: "Certification in SRM Certification Level 3",
       image: img12,
+    },
+    ,
+    {
+      id: 13,
+      title: "Certification in Postman Api certification",
+      image: img13,
     },
   ];
   const myProjects = [
