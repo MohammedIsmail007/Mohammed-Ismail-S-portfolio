@@ -7,19 +7,19 @@ const Typewriter = () => {
     <Typical
       steps={[
         "WELCOME TO MY PORTFOLIO",
-        5000,
+        9000,
         "REACT JS",
-        5000,
+        9000,
         "SQL PROGRAMMING-[MYSQL] ",
-        5000,
+        9000,
         "JAVA PROGRAMMING",
-        5000,
+        9000,
         "MS-OFFICE",
-        5000,
+        9000,
         "GIT & GITHUB",
-        5000,
+        9000,
         "POSTMAN API FUNDAMENTALS",
-        5000,
+        9000,
       ]}
       loop={Infinity}
       wrapper="p"

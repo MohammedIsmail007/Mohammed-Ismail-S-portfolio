@@ -262,6 +262,7 @@ function App() {
                 setContact(false);
                 setSkills(false);
                 setCertifications(false);
+                setProjects(false);
               }}
               className="hover:bg-blue-500 hover:backdrop:blur-md hover:transition-all text-white pt-1 pb-1 pr-2 pl-2 w-fit  rounded-2xl m-2 backdrop:blur-sm  hover:text-lime-300  font-serif font-bold"
             >
