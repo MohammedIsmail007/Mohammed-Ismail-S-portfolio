@@ -43,14 +43,15 @@ function App() {
 
   const myCertifications = [
     {
-      id: 1,
-      title: "Certification in Figma",
-      image: img1,
+      id: 9,
+      title: "Certification in React Js Essential Program",
+      image: img9,
     },
+
     {
-      id: 2,
-      title: "Certification in Frontend Development",
-      image: img2,
+      id: 4,
+      title: "Certification in Python",
+      image: img4,
     },
     {
       id: 3,
@@ -58,9 +59,15 @@ function App() {
       image: img3,
     },
     {
-      id: 4,
-      title: "Certification in Python",
-      image: img4,
+      id: 13,
+      title: "Certification in Postman Api certification",
+      image: img13,
+    },
+
+    {
+      id: 7,
+      title: "Certification in MySQL",
+      image: img7,
     },
     {
       id: 5,
@@ -68,25 +75,29 @@ function App() {
       image: img5,
     },
     {
+      id: 2,
+      title: "Certification in Frontend Development",
+      image: img2,
+    },
+
+    {
       id: 6,
       title: "Certification in Introduction to JS",
       image: img6,
     },
+
     {
-      id: 7,
-      title: "Certification in MySQL",
-      image: img7,
+      id: 1,
+      title: "Certification in Figma",
+      image: img1,
     },
+
     {
       id: 8,
       title: "Certification iN 2 Days Placement preparation ",
       image: img8,
     },
-    {
-      id: 9,
-      title: "Certification in React Js Essential Program",
-      image: img9,
-    },
+
     {
       id: 10,
       title: "Certification in SRM Certification Level 1",
@@ -103,11 +114,6 @@ function App() {
       image: img12,
     },
     ,
-    {
-      id: 13,
-      title: "Certification in Postman Api certification",
-      image: img13,
-    },
   ];
   const myProjects = [
     {
