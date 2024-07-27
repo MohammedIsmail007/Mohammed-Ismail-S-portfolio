@@ -35,10 +35,10 @@ function App() {
     { name: "REACT JS", level: "85%" },
     { name: "BOOTSTRAP & TAILWIND CSS ", level: "80%" },
     { name: "SQL-PROGRAMING ", level: "80%" },
+    { name: "POSTMAN API FUNDAMENTALS ", level: "85%" },
     { name: "FIGMA UI/UX TOOL", level: "60%" },
     { name: "EXCEL, POWER POINT, WORD  ", level: "80%" },
     { name: "GIT & GITHUB ", level: "60%" },
-    { name: "POSTMAN API FUNDAMENTALS ", level: "85%" },
   ];
 
   const myCertifications = [
