@@ -21,6 +21,8 @@ import img11 from "./assets/certificates/srmclvl2.png";
 import img12 from "./assets/certificates/srmclvl3.png";
 import pdfdownload from "./assets/resume.pdf";
 import img13 from "./assets/certificates/postmanapi.png";
+import img14 from "./asset/certificates/Promptengieering.png";
+import img15 from "./asset/certificates/psqlcertificate.png
 function App() {
   const [portfolio, setPortfolio] = useState(true);
   const [aboutMe, setAboutMe] = useState(false);
@@ -35,13 +37,25 @@ function App() {
     { name: "REACT JS", level: "85%" },
     { name: "BOOTSTRAP & TAILWIND CSS ", level: "80%" },
     { name: "SQL-PROGRAMING ", level: "80%" },
+    { name: "POSTGRESQL ", level: "60%" },
     { name: "POSTMAN API FUNDAMENTALS ", level: "85%" },
     { name: "FIGMA UI/UX TOOL", level: "60%" },
     { name: "EXCEL, POWER POINT, WORD  ", level: "80%" },
     { name: "GIT & GITHUB ", level: "60%" },
+    { name: "PROMPT ENGINEERING ", level: "75%" },
   ];
 
   const myCertifications = [
+    {
+      id: 14,
+      title: "Certification in PROMPT ENGINEERING AT UDEMY",
+      image: img14,
+    },
+     {
+      id: 15,
+      title: "Certification in POSTGRESQL AT UDEMY",
+      image: img15,
+    },
     {
       id: 9,
       title: "Certification in React Js Essential Program",
