@@ -21,8 +21,8 @@ import img11 from "./assets/certificates/srmclvl2.png";
 import img12 from "./assets/certificates/srmclvl3.png";
 import pdfdownload from "./assets/resume.pdf";
 import img13 from "./assets/certificates/postmanapi.png";
-import img14 from "./asset/certificates/Promptengieering.png";
-import img15 from "./asset/certificates/psqlcertificate.png
+import img14 from "./assets/certificates/Promptengineering.png";
+import img15 from "./assets/certificates/psqlcertificate.png";
 function App() {
   const [portfolio, setPortfolio] = useState(true);
   const [aboutMe, setAboutMe] = useState(false);
@@ -51,11 +51,13 @@ function App() {
       title: "Certification in PROMPT ENGINEERING AT UDEMY",
       image: img14,
     },
-     {
+
+    {
       id: 15,
       title: "Certification in POSTGRESQL AT UDEMY",
       image: img15,
     },
+
     {
       id: 9,
       title: "Certification in React Js Essential Program",
@@ -67,11 +69,13 @@ function App() {
       title: "Certification in Python",
       image: img4,
     },
+
     {
       id: 3,
       title: "Certification in Git & Github",
       image: img3,
     },
+
     {
       id: 13,
       title: "Certification in Postman Api certification",
@@ -83,11 +87,13 @@ function App() {
       title: "Certification in MySQL",
       image: img7,
     },
+
     {
       id: 5,
       title: "Certification in HTML, CSS, JS INTERNSHIP",
       image: img5,
     },
+
     {
       id: 2,
       title: "Certification in Frontend Development",
@@ -122,13 +128,14 @@ function App() {
       title: "Certification in SRM Certification Level 2",
       image: img11,
     },
+
     {
       id: 12,
       title: "Certification in SRM Certification Level 3",
       image: img12,
     },
-    ,
   ];
+
   const myProjects = [
     {
       title: "CGPA Calculation",
@@ -411,6 +418,7 @@ function App() {
                 <span className="font-semibold border-orange-400 border-b-2 border-dotted text-green-400">
                   quick-learning
                 </span>{" "}
+                
                 <span className="font-semibold border-orange-400 border-b-2 border-dotted text-green-400">
                   front-end developer
                 </span>
