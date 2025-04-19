@@ -17,16 +17,20 @@ import img14 from "./assets/certificates/Promptengineering.png";
 import img15 from "./assets/certificates/psqlcertificate.png";
 
 export const mySkills = [
+    { name: "PYTHON PROGRAMMING ", level: "80%" },
+    { name: "PYTHON FLASK ", level: "80%" },
+    { name: "FAST API (PYTHON) & RESTFUL API (EPRESS, NODE JS) ", level: "80%" },
     { name: "JAVA PROGRAMMING", level: "80%" },
     { name: "REACT JS", level: "85%" },
     { name: "BOOTSTRAP & TAILWIND CSS ", level: "80%" },
     { name: "SQL-PROGRAMING ", level: "80%" },
     { name: "POSTGRESQL ", level: "60%" },
+    { name: "PROMPT ENGINEERING ", level: "75%" },
+    { name: "RESEARCH & DEVELOPMENT ", level: "75%" },
     { name: "POSTMAN API FUNDAMENTALS ", level: "85%" },
     { name: "FIGMA UI/UX TOOL", level: "60%" },
     { name: "EXCEL, POWER POINT, WORD  ", level: "80%" },
     { name: "GIT & GITHUB ", level: "60%" },
-    { name: "PROMPT ENGINEERING ", level: "75%" },
 ];
 
 export const myCertifications = [

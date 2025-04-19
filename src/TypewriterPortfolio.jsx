@@ -5,7 +5,16 @@ import Typical from "react-typical";
 const TypewriterPortfolio = () => {
   return (
     <Typical
-      steps={["WEB-DEVELOPER", 5000, "GAMER", 6000, "TECHIE", 7000]}
+      steps={[
+        "Research & Developer🔍",
+        3000,
+        "WEB-DEVELOPER🧑‍💻",
+        2000,
+        "GAMER🎮",
+        2000,
+        "TECHIE🛜",
+        2000,
+      ]}
       loop={Infinity}
       wrapper="p"
     />

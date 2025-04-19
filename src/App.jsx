@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Typewriter from "./Typewriter";
 import TypewriterPortfolio from "./TypewriterPortfolio";
-import CustomAlert from "./CustomALert";
+// import CustomAlert from "./CustomALert";
 import { Button, Card } from "flowbite-react";
 import Footer from "./Footer";
 import { mySkills, myCertifications, myProjects, myExperience } from "./data";
@@ -79,12 +79,12 @@ function App() {
         </header>
 
         {/* CUSTOM ALERT */}
-        {showAlert && (
+        {/* {showAlert && (
           <CustomAlert
             message="WELCOME TO MY PORTFOLIO"
             onClose={handleCloseAlert}
           />
-        )}
+        )} */}
 
         {/* MAIN SECTION */}
         <div className="font-serif text-center p-2 pb-0 m-5">
@@ -208,16 +208,42 @@ function App() {
           >
             <div>
               <h2 className="text-2xl font-bold text-yellow-400 mb-4">
-                Experience
+                Experience 📈
               </h2>
               {myExperience.map((exp, index) => (
-                <div key={index} className="mb-4">
-                  <h3 className="text-xl font-semibold">{exp.role}</h3>
-                  <p className="text-sm text-gray-300">
+                <Card
+                  key={index}
+                  className="max-w-sm bg-transparent bg-white bg-opacity-10"
+                >
+                  <h5 className="text-2xl font-bold tracking-tight text-orange-400 font-serif dark:text-white">
+                    {exp.role}
+                  </h5>
+                  <p className="font-normal text-white text-opacity-85 dark:text-gray-400">
                     {exp.company} | {exp.duration}
                   </p>
-                  <p className="text-md">{exp.description}</p>
-                </div>
+                  <p className="mt-2 text-white text-opacity-90 dark:text-gray-300">
+                    {exp.description}
+                  </p>
+                  {exp.link && (
+                    <div className="flex justify-center mt-3">
+                      <a
+                        href={exp.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button className="text-black bg-white w-fit">
+                          <p>
+                            Visit{" "}
+                            <i
+                              className="fa fa-external-link text-blue-600 ml-1"
+                              aria-hidden="true"
+                            ></i>
+                          </p>
+                        </Button>
+                      </a>
+                    </div>
+                  )}
+                </Card>
               ))}
             </div>
           </div>
@@ -252,6 +278,7 @@ function App() {
                   setProjects(false);
                   setCertifications(false);
                   setContact(false);
+                  myExperience(false);
                 }}
               >
                 About Me
@@ -269,7 +296,7 @@ function App() {
           >
             <div>
               <h2 className="text-2xl font-bold text-yellow-400 mb-4">
-                About Me
+                About Me 🧑‍💻
               </h2>
               <p className="text-lg text-white">
                 As an{" "}
@@ -361,22 +388,27 @@ function App() {
                 : "hidden"
             }`}
           >
-            <div className="py-3">
-              <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
-              <div className="space-y-6">
-                {mySkills.map((skill, index) => (
-                  <div key={index} className="rounded-lg overflow-hidden">
-                    <div className="flex justify-between px-4 py-2 text-white rounded-t-lg">
-                      <span>{skill.name}</span> <span> {skill.level} </span>
+            <div className="flex flex-wrap h-80 overflow-y-scroll justify-around bg-transparent m-1">
+              <div className="py-3 gap-5">
+                <h2 className="text-3xl font-bold text-center mb-8">
+                  Skills 🤹
+                </h2>
+                <div className="space-y-6 pr-4 left-3">
+                  {mySkills.map((skill, index) => (
+                    <div key={index} className="rounded-lg overflow-hidden">
+                      <div className="flex justify-between px-4 py-2 text-white rounded-t-lg">
+                        <span>{skill.name}</span>
+                        {/* <span> {skill.level} </span> */}
+                      </div>
+                      {/* <div className="w-full bg-white h-3 rounded-lg">
+                        <div
+                          className="bg-blue-500 h-full w-full"
+                          style={{ width: skill.level }}
+                        ></div>
+                      </div> */}
                     </div>
-                    <div className="w-full bg-white h-3 rounded-lg">
-                      <div
-                        className="bg-blue-500 h-full w-full"
-                        style={{ width: skill.level }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -390,6 +422,9 @@ function App() {
             }`}
           >
             <div className="flex flex-wrap h-80 overflow-y-scroll justify-around bg-transparent m-1">
+              <h2 className="text-3xl font-bold text-center mb-8">
+                ACADEMIC & SELF - PROJECTS 🧑‍💻
+              </h2>
               <div className="flex flex-wrap justify-around gap-5 p-3">
                 {myProjects.map((project, i) => {
                   return (
@@ -449,6 +484,9 @@ function App() {
             }`}
           >
             <div className="flex flex-wrap h-80 overflow-y-scroll justify-around bg-transparent m-1">
+              <h2 className="text-3xl font-bold text-center mb-8">
+                ACADEMIC & SELF LEARNED CERTIFICATIONS 🎓
+              </h2>
               <div className="flex flex-wrap justify-center p-3 gap-5">
                 {myCertifications.map((certification, index) => (
                   <Card
